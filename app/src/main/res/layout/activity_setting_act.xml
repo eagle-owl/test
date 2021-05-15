@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting_act"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:orientation="horizontal"
+        android:background="#F1356A">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:text="설정"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:background="#E7EBEC">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:text="알림"
+            android:textSize="20dp"
+            android:textColor="#7A7979"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_centerVertical="true"
+        android:text="키워드 알림"
+        android:textSize="15dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:text="푸시 알림"
+        android:layout_centerVertical="true"
+        android:textSize="15dp"
+        android:textColor="@color/black"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:background="#E7EBEC">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:text="테마"
+            android:textSize="20dp"
+            android:textColor="#7A7979"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_centerVertical="true"
+        android:text="다크 모드"
+        android:layout_gravity="left"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+</LinearLayout>

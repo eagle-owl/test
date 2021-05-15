@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="#F1356A"
+        android:gravity="bottom"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_marginLeft="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="검색어를 입력 하세요"
+            android:layout_weight="9"/>
+
+        <ImageView
+            android:id="@+id/iv_searchResult"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_marginLeft="40px"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_notifications_24"
+            android:layout_marginLeft="40px"/>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        tools:listitem="@layout/recyclerview_item"
+        android:scrollbars="vertical"
+        android:scrollbarSize="1dp"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarThumbVertical="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="624dp"
+        android:layout_marginBottom="58dp"
+        android:layout_alignParentBottom="true"
+
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#f1356A"
+        android:layout_alignParentBottom="true"
+        android:stretchColumns="0,1,2,3">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150px"
+                android:src="@drawable/ic_baseline_home_24"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150px"
+                android:src="@drawable/ic_baseline_favorite_23"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150px"
+                android:src="@drawable/ic_baseline_calculate_24"/>
+
+            <ImageView
+                android:id="@+id/home_setting"
+                android:layout_width="0dp"
+                android:layout_height="150px"
+                android:src="@drawable/ic_baseline_settings_24" />
+
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>
